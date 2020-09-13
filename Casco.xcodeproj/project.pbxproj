@@ -13,6 +13,10 @@
 		45A3556E250E18A3005E182F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A3556C250E18A3005E182F /* Main.storyboard */; };
 		45A35570250E18AD005E182F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A3556F250E18AD005E182F /* Assets.xcassets */; };
 		45A35573250E18AD005E182F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A35571250E18AD005E182F /* LaunchScreen.storyboard */; };
+		65DF8321250E36490000CEC6 /* Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8320250E36490000CEC6 /* Auto.swift */; };
+		65DF8324250E37620000CEC6 /* DataCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8323250E37620000CEC6 /* DataCars.swift */; };
+		65DF8328250E3FFE0000CEC6 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8327250E3FFE0000CEC6 /* Questions.swift */; };
+		65DF832A250E4FD20000CEC6 /* AllParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF8329250E4FD20000CEC6 /* AllParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		45A3556F250E18AD005E182F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45A35572250E18AD005E182F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45A35574250E18AD005E182F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DF8320250E36490000CEC6 /* Auto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auto.swift; sourceTree = "<group>"; };
+		65DF8323250E37620000CEC6 /* DataCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCars.swift; sourceTree = "<group>"; };
+		65DF8327250E3FFE0000CEC6 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		65DF8329250E4FD20000CEC6 /* AllParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllParameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		45A35565250E18A3005E182F /* Casco */ = {
 			isa = PBXGroup;
 			children = (
+				65DF8322250E373D0000CEC6 /* Services */,
 				45A3557D250E1947005E182F /* Models */,
 				45A3557E250E1964005E182F /* SupportingFiles */,
 				45A3557C250E1938005E182F /* Controllers */,
@@ -93,6 +102,9 @@
 		45A3557D250E1947005E182F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				65DF8329250E4FD20000CEC6 /* AllParameters.swift */,
+				65DF8320250E36490000CEC6 /* Auto.swift */,
+				65DF8327250E3FFE0000CEC6 /* Questions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,6 +117,14 @@
 				45A35574250E18AD005E182F /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		65DF8322250E373D0000CEC6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				65DF8323250E37620000CEC6 /* DataCars.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +200,11 @@
 			files = (
 				45A3556B250E18A3005E182F /* ViewController.swift in Sources */,
 				45A35567250E18A3005E182F /* AppDelegate.swift in Sources */,
+				65DF8324250E37620000CEC6 /* DataCars.swift in Sources */,
+				65DF8328250E3FFE0000CEC6 /* Questions.swift in Sources */,
+				65DF8321250E36490000CEC6 /* Auto.swift in Sources */,
 				45A35569250E18A3005E182F /* SceneDelegate.swift in Sources */,
+				65DF832A250E4FD20000CEC6 /* AllParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
