@@ -13,6 +13,9 @@
 		45A3556E250E18A3005E182F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A3556C250E18A3005E182F /* Main.storyboard */; };
 		45A35570250E18AD005E182F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A3556F250E18AD005E182F /* Assets.xcassets */; };
 		45A35573250E18AD005E182F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A35571250E18AD005E182F /* LaunchScreen.storyboard */; };
+		E77FC516250E323300BB3E83 /* AutoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77FC515250E323300BB3E83 /* AutoInfoViewController.swift */; };
+		E77FC518250E355200BB3E83 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77FC517250E355200BB3E83 /* CustomerViewController.swift */; };
+		E77FC51A250E380E00BB3E83 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77FC519250E380E00BB3E83 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		45A3556F250E18AD005E182F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45A35572250E18AD005E182F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45A35574250E18AD005E182F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E77FC515250E323300BB3E83 /* AutoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoInfoViewController.swift; sourceTree = "<group>"; };
+		E77FC517250E355200BB3E83 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
+		E77FC519250E380E00BB3E83 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				45A3556A250E18A3005E182F /* ViewController.swift */,
+				E77FC515250E323300BB3E83 /* AutoInfoViewController.swift */,
+				E77FC517250E355200BB3E83 /* CustomerViewController.swift */,
+				E77FC519250E380E00BB3E83 /* ResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,7 +189,10 @@
 			files = (
 				45A3556B250E18A3005E182F /* ViewController.swift in Sources */,
 				45A35567250E18A3005E182F /* AppDelegate.swift in Sources */,
+				E77FC518250E355200BB3E83 /* CustomerViewController.swift in Sources */,
 				45A35569250E18A3005E182F /* SceneDelegate.swift in Sources */,
+				E77FC516250E323300BB3E83 /* AutoInfoViewController.swift in Sources */,
+				E77FC51A250E380E00BB3E83 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +337,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 96YLZGPGQN;
+				DEVELOPMENT_TEAM = AGH5RSM234;
 				INFOPLIST_FILE = Casco/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,8 +356,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 96YLZGPGQN;
+				DEVELOPMENT_TEAM = AGH5RSM234;
 				INFOPLIST_FILE = Casco/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

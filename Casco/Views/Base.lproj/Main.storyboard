@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,7 +52,7 @@
         <!--Шаг из 5-->
         <scene sceneID="c64-UD-Xgw">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="d2S-an-reV" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="d2S-an-reV" customClass="AutoInfoViewController" customModule="Casco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yYI-er-IC6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +76,9 @@
                                         <rect key="frame" x="131" y="264" width="58" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Далее"/>
+                                        <connections>
+                                            <action selector="brandButtonPressed" destination="d2S-an-reV" eventType="touchUpInside" id="zz4-fX-4W2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -90,6 +93,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Далее"/>
                                         <connections>
+                                            <action selector="modelButtonPressed" destination="d2S-an-reV" eventType="touchUpInside" id="xCg-In-bh3"/>
                                             <segue destination="LC9-Ua-X3N" kind="show" id="uDu-ik-vlu"/>
                                         </connections>
                                     </button>
@@ -105,6 +109,9 @@
                                         <rect key="frame" x="131" y="250" width="58" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Далее"/>
+                                        <connections>
+                                            <action selector="yearButtonPressed" destination="d2S-an-reV" eventType="touchUpInside" id="aOj-49-FLY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -130,15 +137,22 @@
                         <viewLayoutGuide key="safeArea" id="qIn-6i-v8s"/>
                     </view>
                     <navigationItem key="navigationItem" title="Шаг из 5" largeTitleDisplayMode="always" id="FSW-xB-8iB"/>
+                    <connections>
+                        <outlet property="brandPickerView" destination="mpQ-fU-l1D" id="gph-bm-nwe"/>
+                        <outlet property="modelPickerView" destination="KVD-6S-7F3" id="8ke-Oj-ssN"/>
+                        <outlet property="questionLabel" destination="c0P-H7-QAk" id="pmR-fn-cPe"/>
+                        <outlet property="stepProgressView" destination="6mR-qg-OiV" id="dfF-0F-Np6"/>
+                        <outlet property="yearPickerView" destination="6T0-ld-H01" id="H5j-bb-CN9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwZ-4a-CMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1912.5" y="81.338028169014081"/>
         </scene>
-        <!--View Controller-->
+        <!--Customer View Controller-->
         <scene sceneID="Akk-uI-8Cu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="LC9-Ua-X3N" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="LC9-Ua-X3N" customClass="CustomerViewController" customModule="Casco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QFl-W9-yGW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,6 +200,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Рассчитать стоимость"/>
                                         <connections>
+                                            <action selector="calculateButtonPressed" destination="LC9-Ua-X3N" eventType="touchUpInside" id="Y57-kg-G7J"/>
                                             <segue destination="zFp-ZU-z14" kind="show" id="kI5-Xk-fuk"/>
                                         </connections>
                                     </button>
@@ -204,15 +219,20 @@
                         <viewLayoutGuide key="safeArea" id="aES-Hi-PQy"/>
                     </view>
                     <navigationItem key="navigationItem" id="9Q8-GP-TjF"/>
+                    <connections>
+                        <outlet property="ageTextField" destination="DUS-My-Swe" id="EQw-1V-svO"/>
+                        <outlet property="experienceTextField" destination="Ahr-Bj-ya1" id="UYN-94-zgO"/>
+                        <outlet property="stepProgressView" destination="Xnz-r3-Ljh" id="Jfv-n3-9FX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hdg-Tr-sRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2733.75" y="81.338028169014081"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="nzJ-hB-Zu0">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="zFp-ZU-z14" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="zFp-ZU-z14" customClass="ResultViewController" customModule="Casco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fdd-88-4uu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,6 +265,9 @@
                     <navigationItem key="navigationItem" id="PwV-lO-Hld">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="z9q-uH-f9T"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultLabel" destination="Ctn-ar-3XC" id="5OU-gr-tbp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83j-QU-Ck2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
