@@ -14,8 +14,8 @@
 		45A35570250E18AD005E182F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A3556F250E18AD005E182F /* Assets.xcassets */; };
 		45A35573250E18AD005E182F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A35571250E18AD005E182F /* LaunchScreen.storyboard */; };
 		45A3558E250E7735005E182F /* AllParametrs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3558D250E7735005E182F /* AllParametrs.swift */; };
-		45A35590250E7824005E182F /* DataCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3558F250E7824005E182F /* DataCars.swift */; };
 		45A35592250E7873005E182F /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A35591250E7873005E182F /* Questions.swift */; };
+		45A35595250E7934005E182F /* DataCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A35594250E7934005E182F /* DataCars.swift */; };
 		E77FC516250E323300BB3E83 /* AutoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77FC515250E323300BB3E83 /* AutoInfoViewController.swift */; };
 		E77FC518250E355200BB3E83 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77FC517250E355200BB3E83 /* CustomerViewController.swift */; };
 		E77FC51A250E380E00BB3E83 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77FC519250E380E00BB3E83 /* ResultViewController.swift */; };
@@ -31,8 +31,8 @@
 		45A35572250E18AD005E182F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45A35574250E18AD005E182F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45A3558D250E7735005E182F /* AllParametrs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AllParametrs.swift; path = Casco/AllParametrs.swift; sourceTree = SOURCE_ROOT; };
-		45A3558F250E7824005E182F /* DataCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataCars.swift; path = "Casco/Models/New Group/DataCars.swift"; sourceTree = SOURCE_ROOT; };
 		45A35591250E7873005E182F /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Questions.swift; path = Casco/Questions.swift; sourceTree = SOURCE_ROOT; };
+		45A35594250E7934005E182F /* DataCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCars.swift; sourceTree = "<group>"; };
 		E77FC515250E323300BB3E83 /* AutoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoInfoViewController.swift; sourceTree = "<group>"; };
 		E77FC517250E355200BB3E83 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		E77FC519250E380E00BB3E83 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		45A35593250E7899005E182F /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				45A3558F250E7824005E182F /* DataCars.swift */,
+				45A35594250E7934005E182F /* DataCars.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -209,8 +209,8 @@
 				45A3558E250E7735005E182F /* AllParametrs.swift in Sources */,
 				45A35567250E18A3005E182F /* AppDelegate.swift in Sources */,
 				E77FC518250E355200BB3E83 /* CustomerViewController.swift in Sources */,
-				45A35590250E7824005E182F /* DataCars.swift in Sources */,
 				45A35569250E18A3005E182F /* SceneDelegate.swift in Sources */,
+				45A35595250E7934005E182F /* DataCars.swift in Sources */,
 				E77FC516250E323300BB3E83 /* AutoInfoViewController.swift in Sources */,
 				E77FC51A250E380E00BB3E83 /* ResultViewController.swift in Sources */,
 			);
