@@ -9,11 +9,11 @@
 import Foundation
 
 struct AllParameters {
-    let mark: String
-    let model: String
-    let year: Int
-    let age: Int
-    let experience: Int
+    var mark = ""
+    var model = ""
+    var year = 0
+    var age = 0
+    var experience = 0
 }
 
 extension AllParameters {
