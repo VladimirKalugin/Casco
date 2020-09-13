@@ -22,5 +22,4 @@ extension AllParameters {
     init(year: Int) {self.year = year}
     init(age: Int) {self.age = age}
     init(experience: Int) {self.experience = experience}
-    
 }
