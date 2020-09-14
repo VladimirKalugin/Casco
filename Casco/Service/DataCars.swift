@@ -306,7 +306,6 @@ var dataCar = [
     "Admiral": "FAW",
     "Besturn": "FAW",
     "HQ3": "FAW",
-    "Jetta": "FAW",
     "Jinn": "FAW",
     "Landmark": "FAW",
     "V2": "FAW",
@@ -348,8 +347,6 @@ var dataCar = [
     "C-Max": "Ford",
     "Cougar": "Ford",
     "Crown Victoria": "Ford",
-    "E-СЃРµСЂРёСЏ": "Ford",
-    "Econoline": "Ford",
     "Econovan": "Ford",
     "Edge": "Ford",
     "Escape": "Ford",
@@ -359,7 +356,6 @@ var dataCar = [
     "Explorer": "Ford",
     "F-150": "Ford",
     "F-250": "Ford",
-    "F-СЃРµСЂРёСЏ": "Ford",
     "Fiesta": "Ford",
     "Five Hundred": "Ford",
     "Flex": "Ford",
@@ -567,7 +563,6 @@ var dataCar = [
     "Compass": "Jeep",
     "Grand Cherokee": "Jeep",
     "Liberty": "Jeep",
-    "Patriot": "Jeep",
     "Wrangler": "Jeep",
     "1032": "JMC",
     "1043": "JMC",
@@ -827,7 +822,6 @@ var dataCar = [
     "Fuga": "Nissan",
     "Gloria": "Nissan",
     "GT": "Nissan",
-    "GT-R": "Nissan",
     "Homy": "Nissan",
     "Juke": "Nissan",
     "Lafesta": "Nissan",
@@ -1149,4 +1143,4 @@ var dataCar = [
     "SENS": "Zaz",
     "Vida": "Zaz",
     "Grand Tiger": "ZX"
-];             
+]

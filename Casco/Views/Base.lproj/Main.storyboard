@@ -142,10 +142,13 @@
                     <navigationItem key="navigationItem" title="Шаг из 5" largeTitleDisplayMode="always" id="FSW-xB-8iB"/>
                     <connections>
                         <outlet property="brandPickerView" destination="mpQ-fU-l1D" id="gph-bm-nwe"/>
+                        <outlet property="markStackView" destination="MH4-zJ-73R" id="z2A-vA-uyv"/>
                         <outlet property="modelPickerView" destination="KVD-6S-7F3" id="8ke-Oj-ssN"/>
+                        <outlet property="modelStackView" destination="gWq-2e-fpE" id="5XV-o2-FUQ"/>
                         <outlet property="questionLabel" destination="c0P-H7-QAk" id="pmR-fn-cPe"/>
                         <outlet property="stepProgressView" destination="6mR-qg-OiV" id="dfF-0F-Np6"/>
                         <outlet property="yearPickerView" destination="6T0-ld-H01" id="H5j-bb-CN9"/>
+                        <outlet property="yearStackView" destination="HAu-DH-scc" id="80A-n5-EDt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwZ-4a-CMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
