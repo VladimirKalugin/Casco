@@ -23,18 +23,36 @@ class AutoInfoViewController: UIViewController {
     // MARK: - Private Properties
     private let questions = Question.getQuestions()
     private var questionIndex = 0
+    private var sortedMarksOfCars: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        brandPickerView.dataSource = self
+        brandPickerView.delegate = self
+        
+        modelPickerView.dataSource = self
+        modelPickerView.delegate = self
+        
+        
         updateUI()
     }
     
+    //MARK: - IBActions
     @IBAction func brandButtonPressed() {
+        let index = brandPickerView.selectedRow(inComponent: 0)
+        car.mark = sortedMarksOfCars[index]
+        nextQuestion()
     }
+    
     @IBAction func modelButtonPressed() {
+        
+        nextQuestion()
     }
+    
     @IBAction func yearButtonPressed() {
+
+        nextQuestion()
     }
     
     
@@ -96,7 +114,7 @@ extension AutoInfoViewController {
         for (_, mark) in dataCar {
             marksOfCars.insert(mark)
         }
-        let sortedMarksOfCars = marksOfCars.sorted()
+        sortedMarksOfCars = marksOfCars.sorted()
     }
     
 //    private func showModelsOption(with options: String) {
@@ -120,6 +138,39 @@ extension AutoInfoViewController {
 //                yaersForInsurans.append(<#T##newElement: Int##Int#>)
 //            }
         }
+    
+    private func nextQuestion() {
+        questionIndex += 1
+        
+        if questionIndex < questions.count {
+            updateUI()
+        } else {
+            performSegue(withIdentifier: "ownerSegue", sender: nil)
+        }
+    }
     }
 
+
+//MARK:- PickerView DataSource
+extension AutoInfoViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        sortedMarksOfCars.count
+    }
+    
+    
+}
+
+//MARK:- PickerView Delegate
+extension AutoInfoViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let markOfCar = sortedMarksOfCars[row]
+        return markOfCar
+    }
+}
+
+//MARK:- DataPicker Delegate
 

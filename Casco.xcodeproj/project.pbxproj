@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		458A8D9E250FCB9900226B7E /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A8D9D250FCB9900226B7E /* Car.swift */; };
 		45A35567250E18A3005E182F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A35566250E18A3005E182F /* AppDelegate.swift */; };
 		45A35569250E18A3005E182F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A35568250E18A3005E182F /* SceneDelegate.swift */; };
 		45A3556B250E18A3005E182F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3556A250E18A3005E182F /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		458A8D9D250FCB9900226B7E /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		45A35563250E18A3005E182F /* Casco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Casco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A35566250E18A3005E182F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A35568250E18A3005E182F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				45A35594250E7934005E182F /* DataCars.swift */,
+				458A8D9D250FCB9900226B7E /* Car.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			files = (
 				45A35592250E7873005E182F /* Questions.swift in Sources */,
 				45A3556B250E18A3005E182F /* ViewController.swift in Sources */,
+				458A8D9E250FCB9900226B7E /* Car.swift in Sources */,
 				45A3558E250E7735005E182F /* AllParametrs.swift in Sources */,
 				45A35567250E18A3005E182F /* AppDelegate.swift in Sources */,
 				E77FC518250E355200BB3E83 /* CustomerViewController.swift in Sources */,
