@@ -13,6 +13,7 @@ class YearOfIssueViewController: UIViewController {
     @IBOutlet weak var stepProgressView: UIProgressView!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var yearPickerView: UIPickerView!
+    @IBOutlet weak var nextButton: UIButton!
     
     private let questions = Question.getQuestions()
     private let amountOfYearsForInsurance = 10
@@ -21,6 +22,8 @@ class YearOfIssueViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nextButton.layer.cornerRadius = nextButton.frame.width / 6
         
         updateUI()
     }

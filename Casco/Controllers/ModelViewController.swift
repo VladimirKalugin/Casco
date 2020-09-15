@@ -13,6 +13,7 @@ class ModelViewController: UIViewController {
     @IBOutlet weak var stepProgressView: UIProgressView!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var modelPickerView: UIPickerView!
+    @IBOutlet weak var nextButton: UIButton!
     
     private let questions = Question.getQuestions()
     private var modelsOfBrand: [String] = []
@@ -23,6 +24,8 @@ class ModelViewController: UIViewController {
         super.viewDidLoad()
         
         showModelsOption()
+        
+        nextButton.layer.cornerRadius = nextButton.frame.width / 6
         
         updateUI()
     }

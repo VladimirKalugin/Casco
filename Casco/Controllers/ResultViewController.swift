@@ -16,6 +16,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 
         navigationItem.hidesBackButton = true
+        resultLabel.text = "КАСКО на \(car.mark) \(car.model) составляет xxxx руб."
     }
     
 

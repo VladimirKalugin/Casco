@@ -13,6 +13,7 @@ class MarkViewController: UIViewController {
     @IBOutlet weak var stepProgressView: UIProgressView!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var brandPickerView: UIPickerView!
+    @IBOutlet weak var nextButton: UIButton!
     
     // MARK: - Private Properties
     private let questions = Question.getQuestions()
@@ -24,6 +25,8 @@ class MarkViewController: UIViewController {
         super.viewDidLoad()
         
         questionLabel.text = questions[0]
+        
+        nextButton.layer.cornerRadius = nextButton.frame.width / 6
         
         showMarkOptions()
         

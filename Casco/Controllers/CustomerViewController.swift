@@ -13,6 +13,7 @@ class CustomerViewController: UIViewController {
     @IBOutlet weak var stepProgressView: UIProgressView!
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var experienceTextField: UITextField!
+    @IBOutlet weak var calculateButton: UIButton!
     
     private let questions = Question.getQuestions()
     
@@ -20,6 +21,8 @@ class CustomerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        calculateButton.layer.cornerRadius = calculateButton.frame.width / 6
         
         updateUI()
     }

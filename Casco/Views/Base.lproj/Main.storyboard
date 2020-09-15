@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расчитать стоимость КАСКО для Вашего Автомобиля" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEa-L5-sFD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рассчитать стоимость КАСКО для Вашего Автомобиля" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEa-L5-sFD">
                                 <rect key="frame" x="16" y="85" width="288" height="106"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -23,15 +23,17 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lv3-xG-aHT">
                                 <rect key="frame" x="105.5" y="369" width="109" height="53"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Начать"/>
+                                <state key="normal" title="Начать">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="26J-26-9hi" kind="show" id="xAL-PE-yfb"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GEa-L5-sFD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Ve-rh-WJh"/>
                             <constraint firstItem="GEa-L5-sFD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.18662" id="2zJ-1m-Mbr"/>
@@ -80,9 +82,15 @@
                                         </connections>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="py7-uw-XWT">
-                                        <rect key="frame" x="131" y="264" width="58" height="36"/>
+                                        <rect key="frame" x="105.5" y="264" width="109" height="36"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="109" id="jK3-kx-ENN"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Далее"/>
+                                        <state key="normal" title="Далее">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="brandButtonPressed" destination="d2S-an-reV" eventType="touchUpInside" id="zz4-fX-4W2"/>
                                             <segue destination="VtC-VT-OpT" kind="show" identifier="toModelVC" id="Avn-M9-Lay"/>
@@ -91,7 +99,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.53118832709999997" blue="0.4305362344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qIn-6i-v8s" firstAttribute="trailing" secondItem="MH4-zJ-73R" secondAttribute="trailing" id="I3b-pl-5Kx"/>
                             <constraint firstAttribute="trailing" secondItem="6mR-qg-OiV" secondAttribute="trailing" id="MiG-W3-20c"/>
@@ -108,6 +116,7 @@
                     <navigationItem key="navigationItem" title="Шаг из 5" largeTitleDisplayMode="always" id="FSW-xB-8iB"/>
                     <connections>
                         <outlet property="brandPickerView" destination="mpQ-fU-l1D" id="gph-bm-nwe"/>
+                        <outlet property="nextButton" destination="py7-uw-XWT" id="1ua-w3-Lif"/>
                         <outlet property="questionLabel" destination="c0P-H7-QAk" id="pmR-fn-cPe"/>
                         <outlet property="stepProgressView" destination="6mR-qg-OiV" id="dfF-0F-Np6"/>
                     </connections>
@@ -135,9 +144,15 @@
                                         </connections>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIi-Wk-GZJ">
-                                        <rect key="frame" x="131" y="277" width="58" height="36"/>
+                                        <rect key="frame" x="105.5" y="277" width="109" height="36"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="109" id="uqy-Au-eHH"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Далее"/>
+                                        <state key="normal" title="Далее">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="nextButtonPressed" destination="VtC-VT-OpT" eventType="touchUpInside" id="7Bq-x0-qQy"/>
                                             <segue destination="8Hr-Dz-l13" kind="show" id="mQs-LM-Oy2"/>
@@ -155,7 +170,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.53118832709999997" blue="0.4305362344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZYp-JB-nMG" firstAttribute="top" secondItem="gh3-px-ay6" secondAttribute="top" id="0OU-XX-8ab"/>
                             <constraint firstItem="uVg-Nz-lVN" firstAttribute="leading" secondItem="gh3-px-ay6" secondAttribute="leading" constant="16" id="2vH-5D-gLm"/>
@@ -172,6 +187,7 @@
                     <navigationItem key="navigationItem" id="VXg-oL-q3D"/>
                     <connections>
                         <outlet property="modelPickerView" destination="KVD-6S-7F3" id="CA3-RP-fjB"/>
+                        <outlet property="nextButton" destination="bIi-Wk-GZJ" id="cpN-JR-0sd"/>
                         <outlet property="questionLabel" destination="uVg-Nz-lVN" id="29v-dB-Fgx"/>
                         <outlet property="stepProgressView" destination="ZYp-JB-nMG" id="nVt-8I-2LI"/>
                     </connections>
@@ -199,9 +215,15 @@
                                         </connections>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="432-bX-eAv">
-                                        <rect key="frame" x="131" y="250" width="58" height="36"/>
+                                        <rect key="frame" x="105.5" y="250" width="109" height="36"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="109" id="LH8-FP-IKk"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Далее"/>
+                                        <state key="normal" title="Далее">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="nextButtonPressed" destination="8Hr-Dz-l13" eventType="touchUpInside" id="aGe-kd-Wug"/>
                                             <segue destination="LC9-Ua-X3N" kind="show" id="hUG-qY-QC5"/>
@@ -219,7 +241,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.53118832709999997" blue="0.4305362344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HAu-DH-scc" firstAttribute="trailing" secondItem="D7B-l1-uCs" secondAttribute="trailing" id="4Ng-4G-ZRZ"/>
                             <constraint firstItem="D7B-l1-uCs" firstAttribute="trailing" secondItem="OSi-Wm-KaL" secondAttribute="trailing" constant="16" id="AjP-Ex-ZBx"/>
@@ -235,6 +257,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="BuW-2A-mDQ"/>
                     <connections>
+                        <outlet property="nextButton" destination="432-bX-eAv" id="nLf-qT-3qi"/>
                         <outlet property="questionLabel" destination="OSi-Wm-KaL" id="d5t-aO-qde"/>
                         <outlet property="stepProgressView" destination="pZI-hA-dF2" id="hOi-MF-9kX"/>
                         <outlet property="yearPickerView" destination="AjE-IT-YAE" id="SZS-d9-4Jg"/>
@@ -292,8 +315,11 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0P-pl-7j5">
                                         <rect key="frame" x="0.0" y="244" width="288" height="36"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Рассчитать стоимость"/>
+                                        <state key="normal" title="Рассчитать стоимость">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="calculateButtonPressed" destination="LC9-Ua-X3N" eventType="touchUpInside" id="Y57-kg-G7J"/>
                                             <segue destination="zFp-ZU-z14" kind="show" id="kI5-Xk-fuk"/>
@@ -316,6 +342,7 @@
                     <navigationItem key="navigationItem" id="9Q8-GP-TjF"/>
                     <connections>
                         <outlet property="ageTextField" destination="DUS-My-Swe" id="EQw-1V-svO"/>
+                        <outlet property="calculateButton" destination="o0P-pl-7j5" id="7I0-25-gQF"/>
                         <outlet property="experienceTextField" destination="Ahr-Bj-ya1" id="UYN-94-zgO"/>
                         <outlet property="stepProgressView" destination="Xnz-r3-Ljh" id="Jfv-n3-9FX"/>
                     </connections>
@@ -341,7 +368,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctn-ar-3XC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctn-ar-3XC">
                                         <rect key="frame" x="120.5" y="109" width="61.5" height="31.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <nil key="textColor"/>
