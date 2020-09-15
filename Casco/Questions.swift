@@ -22,28 +22,13 @@ struct Question {
 }
 
 extension Question {
-    static func getQuestions() -> [Question] {
+    static func getQuestions() -> [String] {
         return [
-            Question(
-                text: "Укажите марку автомобиля",
-                type: .mark
-            ),
-            Question(
-                text: "Укажите модель автомобиля",
-                type: .model
-            ),
-            Question(
-                text: "Укажите год выпуска автомобиля",
-                type: .yearOfCreate
-            ),
-            Question(
-                text: "Укажите ваш возвраст",
-                type: .age
-            ),
-            Question(
-                text: "Укажите ваш стаж",
-                type: .experience
-            )
-        ]
+            "Укажите марку автомобиля",
+            "Укажите модель автомобиля",
+            "Укажите год выпуска автомобиля",
+            "Укажите ваш возвраст",
+            "Укажите ваш стаж"
+            ]
     }
 }

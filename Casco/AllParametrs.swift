@@ -11,7 +11,7 @@ import Foundation
 struct AllParameters {
     var mark = ""
     var model = ""
-    var year = 0
+    var year = ""
     var age = 0
     var experience = 0
 }
@@ -19,7 +19,7 @@ struct AllParameters {
 extension AllParameters {
     init(mark: String) {self.mark = mark}
     init(model: String) {self.model = model}
-    init(year: Int) {self.year = year}
+    init(year: String) {self.year = year}
     init(age: Int) {self.age = age}
     init(experience: Int) {self.experience = experience}
 }

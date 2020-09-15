@@ -9,28 +9,35 @@
 import UIKit
 
 class CustomerViewController: UIViewController {
-
+    
     @IBOutlet weak var stepProgressView: UIProgressView!
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var experienceTextField: UITextField!
     
+    private let questions = Question.getQuestions()
+    
+    var questionIndex = 4
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        updateUI()
     }
     
     @IBAction func calculateButtonPressed() {
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - Methods
+    func updateUI() {
+        // calculate progress
+        let totalProgress = Float(questionIndex) / Float(questions.count)
+        
+        // set progress
+        stepProgressView.setProgress(totalProgress, animated: true)
+        
+        // set navigation title
+        title = "Вопрос № \(questionIndex) из \(questions.count)"
     }
-    */
-
+    
+    
 }
