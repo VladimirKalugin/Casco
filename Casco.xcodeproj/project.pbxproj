@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4586A1512510F23700A0A666 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586A1502510F23700A0A666 /* ModelViewController.swift */; };
+		4586A1532510F27A00A0A666 /* YearOfIssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586A1522510F27A00A0A666 /* YearOfIssueViewController.swift */; };
+		4586A15525110BB000A0A666 /* DataDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586A15425110BB000A0A666 /* DataDate.swift */; };
+		458A8D9E250FCB9900226B7E /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458A8D9D250FCB9900226B7E /* Car.swift */; };
 		45A35567250E18A3005E182F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A35566250E18A3005E182F /* AppDelegate.swift */; };
 		45A35569250E18A3005E182F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A35568250E18A3005E182F /* SceneDelegate.swift */; };
 		45A3556B250E18A3005E182F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3556A250E18A3005E182F /* ViewController.swift */; };
 		45A3556E250E18A3005E182F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A3556C250E18A3005E182F /* Main.storyboard */; };
 		45A35570250E18AD005E182F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A3556F250E18AD005E182F /* Assets.xcassets */; };
 		45A35573250E18AD005E182F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A35571250E18AD005E182F /* LaunchScreen.storyboard */; };
+		45A3558E250E7735005E182F /* AllParametrs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3558D250E7735005E182F /* AllParametrs.swift */; };
+		45A35592250E7873005E182F /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A35591250E7873005E182F /* Questions.swift */; };
+		45A35595250E7934005E182F /* DataCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A35594250E7934005E182F /* DataCars.swift */; };
+		65F78C312511264400BBAA11 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F78C302511264400BBAA11 /* Payment.swift */; };
+		E77FC516250E323300BB3E83 /* MarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77FC515250E323300BB3E83 /* MarkViewController.swift */; };
+		E77FC518250E355200BB3E83 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77FC517250E355200BB3E83 /* CustomerViewController.swift */; };
+		E77FC51A250E380E00BB3E83 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77FC519250E380E00BB3E83 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4586A1502510F23700A0A666 /* ModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewController.swift; sourceTree = "<group>"; };
+		4586A1522510F27A00A0A666 /* YearOfIssueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearOfIssueViewController.swift; sourceTree = "<group>"; };
+		4586A15425110BB000A0A666 /* DataDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDate.swift; sourceTree = "<group>"; };
+		458A8D9D250FCB9900226B7E /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		45A35563250E18A3005E182F /* Casco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Casco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A35566250E18A3005E182F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A35568250E18A3005E182F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +39,13 @@
 		45A3556F250E18AD005E182F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45A35572250E18AD005E182F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45A35574250E18AD005E182F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45A3558D250E7735005E182F /* AllParametrs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AllParametrs.swift; path = Casco/AllParametrs.swift; sourceTree = SOURCE_ROOT; };
+		45A35591250E7873005E182F /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Questions.swift; path = Casco/Questions.swift; sourceTree = SOURCE_ROOT; };
+		45A35594250E7934005E182F /* DataCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCars.swift; sourceTree = "<group>"; };
+		65F78C302511264400BBAA11 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		E77FC515250E323300BB3E83 /* MarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkViewController.swift; sourceTree = "<group>"; };
+		E77FC517250E355200BB3E83 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
+		E77FC519250E380E00BB3E83 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 		45A35565250E18A3005E182F /* Casco */ = {
 			isa = PBXGroup;
 			children = (
+				45A35593250E7899005E182F /* Service */,
 				45A3557D250E1947005E182F /* Models */,
 				45A3557E250E1964005E182F /* SupportingFiles */,
 				45A3557C250E1938005E182F /* Controllers */,
@@ -86,6 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				45A3556A250E18A3005E182F /* ViewController.swift */,
+				E77FC515250E323300BB3E83 /* MarkViewController.swift */,
+				4586A1502510F23700A0A666 /* ModelViewController.swift */,
+				4586A1522510F27A00A0A666 /* YearOfIssueViewController.swift */,
+				E77FC517250E355200BB3E83 /* CustomerViewController.swift */,
+				E77FC519250E380E00BB3E83 /* ResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -93,6 +121,8 @@
 		45A3557D250E1947005E182F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				45A3558D250E7735005E182F /* AllParametrs.swift */,
+				45A35591250E7873005E182F /* Questions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,6 +135,17 @@
 				45A35574250E18AD005E182F /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		45A35593250E7899005E182F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				45A35594250E7934005E182F /* DataCars.swift */,
+				458A8D9D250FCB9900226B7E /* Car.swift */,
+				4586A15425110BB000A0A666 /* DataDate.swift */,
+				65F78C302511264400BBAA11 /* Payment.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +219,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A35592250E7873005E182F /* Questions.swift in Sources */,
 				45A3556B250E18A3005E182F /* ViewController.swift in Sources */,
+				65F78C312511264400BBAA11 /* Payment.swift in Sources */,
+				458A8D9E250FCB9900226B7E /* Car.swift in Sources */,
+				45A3558E250E7735005E182F /* AllParametrs.swift in Sources */,
 				45A35567250E18A3005E182F /* AppDelegate.swift in Sources */,
+				E77FC518250E355200BB3E83 /* CustomerViewController.swift in Sources */,
+				4586A1512510F23700A0A666 /* ModelViewController.swift in Sources */,
 				45A35569250E18A3005E182F /* SceneDelegate.swift in Sources */,
+				4586A1532510F27A00A0A666 /* YearOfIssueViewController.swift in Sources */,
+				45A35595250E7934005E182F /* DataCars.swift in Sources */,
+				4586A15525110BB000A0A666 /* DataDate.swift in Sources */,
+				E77FC516250E323300BB3E83 /* MarkViewController.swift in Sources */,
+				E77FC51A250E380E00BB3E83 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +377,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 96YLZGPGQN;
+				DEVELOPMENT_TEAM = AGH5RSM234;
 				INFOPLIST_FILE = Casco/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,8 +396,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 96YLZGPGQN;
+				DEVELOPMENT_TEAM = AGH5RSM234;
 				INFOPLIST_FILE = Casco/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

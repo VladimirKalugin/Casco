@@ -1,0 +1,27 @@
+//
+//  ResultViewController.swift
+//  Casco
+//
+//  Created by Vladimir on 13/09/2020.
+//  Copyright © 2020 myself. All rights reserved.
+//
+
+import UIKit
+
+class ResultViewController: UIViewController {
+
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    let price = getPrice(for: car)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        navigationItem.hidesBackButton = true
+        resultLabel.text = "КАСКО на \(car.mark) \(car.model) составляет \(price) руб."
+    }
+    
+
+
+
+}

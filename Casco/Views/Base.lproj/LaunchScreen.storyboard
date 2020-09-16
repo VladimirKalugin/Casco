@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -33,9 +33,14 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="merc" translatesAutoresizingMaskIntoConstraints="NO" id="QxF-A3-g7Y">
+                                <rect key="frame" x="60" y="369" width="200" height="105"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.531188327138576" blue="0.43053623436656741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="QxF-A3-g7Y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0OJ-0b-4JR"/>
+                            <constraint firstItem="QxF-A3-g7Y" firstAttribute="top" secondItem="Qu6-E3-cmr" secondAttribute="bottom" constant="30" id="Bnx-eE-Dm0"/>
                             <constraint firstItem="Qu6-E3-cmr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NdF-3C-Dkd"/>
                             <constraint firstItem="Qu6-E3-cmr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sO1-Sd-1gS"/>
                             <constraint firstItem="Qu6-E3-cmr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="seL-2i-ucN"/>
@@ -48,4 +53,7 @@
             <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="merc" width="200" height="105"/>
+    </resources>
 </document>
