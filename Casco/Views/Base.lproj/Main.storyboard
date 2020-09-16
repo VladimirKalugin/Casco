@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -85,7 +85,7 @@
                                         <rect key="frame" x="105.5" y="264" width="109" height="36"/>
                                         <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="109" id="jK3-kx-ENN"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="109" id="jK3-kx-ENN"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Далее">
@@ -147,7 +147,7 @@
                                         <rect key="frame" x="105.5" y="277" width="109" height="36"/>
                                         <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="109" id="uqy-Au-eHH"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="109" id="uqy-Au-eHH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Далее">
@@ -218,7 +218,7 @@
                                         <rect key="frame" x="105.5" y="250" width="109" height="36"/>
                                         <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="109" id="LH8-FP-IKk"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="109" id="LH8-FP-IKk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Далее">
@@ -360,16 +360,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="BSJ-js-l04">
-                                <rect key="frame" x="9" y="204" width="302.5" height="140.5"/>
+                                <rect key="frame" x="16" y="229" width="288" height="90"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Примерная стоимость страховки:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVb-Nz-2Lf">
-                                        <rect key="frame" x="0.0" y="0.0" width="302.5" height="23"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctn-ar-3XC">
-                                        <rect key="frame" x="120.5" y="109" width="61.5" height="31.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctn-ar-3XC">
+                                        <rect key="frame" x="113.5" y="0.0" width="61.5" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="7Lg-bs-Whc"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -379,6 +376,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="BSJ-js-l04" firstAttribute="leading" secondItem="POK-Sa-ezL" secondAttribute="leading" constant="16" id="Lhu-kq-60z"/>
+                            <constraint firstItem="POK-Sa-ezL" firstAttribute="trailing" secondItem="BSJ-js-l04" secondAttribute="trailing" constant="16" id="f4u-w6-wPV"/>
                             <constraint firstItem="BSJ-js-l04" firstAttribute="centerX" secondItem="fdd-88-4uu" secondAttribute="centerX" id="q3i-e1-CGf"/>
                             <constraint firstItem="BSJ-js-l04" firstAttribute="centerY" secondItem="fdd-88-4uu" secondAttribute="centerY" id="saV-ht-Zxh"/>
                         </constraints>

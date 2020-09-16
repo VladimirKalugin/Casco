@@ -8,17 +8,8 @@
 
 import Foundation
 
-enum TypesOfQuestion {
-    case mark
-    case model
-    case yearOfCreate
-    case age
-    case experience
-}
-
 struct Question {
     let text: String
-    let type: TypesOfQuestion
 }
 
 extension Question {

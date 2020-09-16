@@ -12,11 +12,13 @@ class ResultViewController: UIViewController {
 
     @IBOutlet weak var resultLabel: UILabel!
     
+    let price = getPrice(for: car)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.hidesBackButton = true
-        resultLabel.text = "КАСКО на \(car.mark) \(car.model) составляет xxxx руб."
+        resultLabel.text = "КАСКО на \(car.mark) \(car.model) составляет \(price) руб."
     }
     
 

@@ -8,6 +8,13 @@
 
 import Foundation
 
+enum DataCars {
+    case audi
+    case bmw
+    case cadillac
+    case volvo
+}
+
 var dataCar = [
     "A1": "Audi",
     "A2": "Audi",

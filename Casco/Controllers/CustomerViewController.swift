@@ -28,7 +28,19 @@ class CustomerViewController: UIViewController {
     }
     
     @IBAction func calculateButtonPressed() {
+        
+        guard let customerAge = ageTextField.text else { return }
+        car.age = Int(customerAge) ?? 0
+        guard let customerExperience = experienceTextField.text else { return }
+        car.experience = Int(customerExperience) ?? 0
+        
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //        let resultVC = segue.destination as? CustomerViewController
+//
+//
+//    }
     
     //MARK: - Methods
     func updateUI() {
